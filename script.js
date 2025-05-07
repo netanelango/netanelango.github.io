@@ -142,4 +142,22 @@ steps.forEach(step => obsFormation.observe(step));
       left: direction * scrollAmount,
       behavior: "smooth"
     });
-  }
+}
+  document.querySelectorAll('.open-modal').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const modal = document.getElementById(this.dataset.modal);
+      modal.style.display = 'flex';
+    });
+  });
+
+  document.querySelectorAll('.modal .close').forEach(closeBtn => {
+    closeBtn.addEventListener('click', function() {
+      this.closest('.modal').style.display = 'none';
+    });
+  });
+
+  window.addEventListener('click', function(e) {
+    document.querySelectorAll('.modal').forEach(modal => {
+      if (e.target === modal) modal.style.display = 'none';
+    });
+  });
