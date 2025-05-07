@@ -1,6 +1,11 @@
 const canvas = document.getElementById('bubbles');
 const ctx = canvas.getContext('2d');
+const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
 
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = document.querySelector('.hero').offsetHeight;
@@ -115,3 +120,26 @@ function animate() {
 }
 
 animate();
+ const steps = document.querySelectorAll('.formation-step');
+
+  const obsFormation = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, index * 400); // Décalage entre chaque étape
+        observer.unobserve(entry.target); // Une seule apparition
+      }
+    });
+  }, { threshold: 0.2 });
+
+steps.forEach(step => obsFormation.observe(step));
+  
+ function scrollCarousel(direction) {
+    const track = document.getElementById("carouselTrack");
+    const scrollAmount = 400;
+    track.scrollBy({
+      left: direction * scrollAmount,
+      behavior: "smooth"
+    });
+  }
