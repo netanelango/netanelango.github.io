@@ -211,7 +211,7 @@ nav ul li a:hover {
 .formation-section {
     background: linear-gradient(to right, #f4f7f9, #e9edf1);
     padding: 100px 20px;
-    overflow-x: auto;
+    
 }
 
 .timeline-formation {
@@ -221,6 +221,7 @@ nav ul li a:hover {
     position: relative;
     padding-top: 100px; /* Plus d’espace pour les cercles */
     margin: 0 auto;
+    overflow-x: auto;
 }
 
 .formation-step {
@@ -588,7 +589,7 @@ footer p {
     padding: 20px 20px;
 }
 .timeline-formation {
-    padding-top: 20px;
+    padding: 40px 20px;
 }
 
 }
