@@ -72,7 +72,7 @@ nav ul li a:hover {
 .hero {
     position: relative;
     overflow: hidden;
-    height: 90vh;
+     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,9 +81,9 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
-    min-height: 100vh;
-    padding-top: 30px;  /* déjà ajouté dans .hero-content mais c’est plus sûr ici */
-    padding-bottom: 120px; /* pour éviter que le footer cache */
+    padding-top: 130px;  /* déjà ajouté dans .hero-content mais c’est plus sûr ici */
+    padding-bottom: 120px;
+
 }
 
 .highlights {
@@ -126,7 +126,6 @@ nav ul li a:hover {
 }
 
 .hero-content {
-     padding-top: 200px; 
     text-align: center;
     z-index: 1;
     .btn{
@@ -352,7 +351,9 @@ nav ul li a:hover {
 
 .experience-left {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     margin-bottom: 15px;
     width: 30%;
@@ -361,7 +362,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 65%;
+    width: 68%;
 }
 
 .company-logo {
