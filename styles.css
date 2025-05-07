@@ -65,7 +65,10 @@ nav ul li a:hover {
 }
 
 
-
+.description-profile {
+    width: 50%;
+    margin: auto;
+}
 .hero {
     position: relative;
     overflow: hidden;
@@ -123,7 +126,7 @@ nav ul li a:hover {
 }
 
 .hero-content {
-     padding-top: 130px; 
+     padding-top: 200px; 
     text-align: center;
     z-index: 1;
     .btn{
@@ -396,6 +399,63 @@ nav ul li a:hover {
     color: #2c3e50;
 }
 
+.skills-section {
+  padding: 80px 20px;
+  text-align: center;
+  width: 60%;
+    margin: auto;
+}
+
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+  width: 250px;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card strong {
+  font-size: 1.1rem;
+  color: #c0392b;
+}
+
+.soft-skills {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.soft-skills li {
+  background: #ffffff;
+  border-left: 5px solid #c0392b;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+
 
 
 footer {
@@ -470,6 +530,12 @@ footer p {
         max-width: none;
         width: 80%;
     }
+    .description-profile {
+    width: 100%;
+    }
+    .skills-section {
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -500,6 +566,9 @@ footer p {
     color: #2c3e50;
     margin-bottom: 10px;
     font-size: 11px;
+}
+.formation-card {
+    width: 200px;
 }
 .formation-card .school {
     font-weight: bold;
@@ -536,6 +605,7 @@ footer p {
         max-width: 100%;
         text-align: center;
         padding: 30px 20px;
+        justify-content: center;
     }
 
     .experience-left,
@@ -561,6 +631,7 @@ footer p {
         padding-left: 0;
         list-style-position: inside;
         font-size: 15px;
+        text-align: left;
     }
 }
 
