@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet : Social Metric API</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail-page {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      color: #8e44ad;
+    }
+
+    .project-date {
+      font-size: 1rem;
+      color: #7f8c8d;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-description h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+
+    .project-description p,
+    .project-description ul {
+      text-align: justify;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .project-description ul {
+      padding-left: 20px;
+    }
+
+    .project-description li {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #8e44ad;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #6c3483;
+    }
+  </style>
+</head>
+<body>
+  <main class="project-detail-page">
+    <section class="project-header">
+      <h1>Social Metric API</h1>
+      <p class="project-date">Projet scolaire – 2024</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="assets/1.jpg" alt="Interface Social Metric API">
+    </section>
+
+    <section class="project-description">
+      <h2>Présentation</h2>
+      <p>
+        Social Metric API est une interface de programmation permettant d’analyser le ton émotionnel d’un message texte.
+        Elle peut identifier si le contenu est formulé de manière calme, joyeuse, agressive, triste ou neutre.
+        Ce type d’API peut être intégré dans des systèmes de modération automatique, des outils de support client ou des réseaux sociaux.
+      </p>
+
+      <h2>Fonctionnalités principales</h2>
+      <ul>
+        <li>Analyse automatique du ton d’un message en langage naturel.</li>
+        <li>Retour d’une catégorie émotionnelle : satisfait, en colère, triste, joyeux, neutre.</li>
+        <li>API REST simple d’intégration avec envoi de texte via requête POST.</li>
+      </ul>
+
+      <h2>Mon rôle</h2>
+      <ul>
+        <li>Conception du modèle de traitement du langage naturel en Python.</li>
+        <li>Création de l’API REST avec Flask.</li>
+        <li>Implémentation de règles de prétraitement du texte (nettoyage, normalisation).</li>
+        <li>Test de différents corpus d'entraînement pour affiner la détection des tons.</li>
+      </ul>
+
+      <h2>Technologies utilisées</h2>
+      <ul>
+        <li>Python</li>
+        <li>Flask</li>
+        <li>NLTK / TextBlob / Scikit-learn (selon configuration)</li>
+      </ul>
+
+      <h2>Ce que j’ai appris</h2>
+      <p>
+        Ce projet m’a permis de m’initier au traitement du langage naturel (NLP) et à la création d’API REST. 
+        J’ai aussi mieux compris comment intégrer des modèles d’analyse sémantique dans des applications concrètes.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

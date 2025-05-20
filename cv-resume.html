@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet : CV Résumé</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail-page {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      color: #2980b9;
+    }
+
+    .project-date {
+      font-size: 1rem;
+      color: #7f8c8d;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-description h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+
+    .project-description p,
+    .project-description ul {
+      text-align: justify;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .project-description ul {
+      padding-left: 20px;
+    }
+
+    .project-description li {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #2980b9;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #21618c;
+    }
+  </style>
+</head>
+<body>
+  <main class="project-detail-page">
+    <section class="project-header">
+      <h1>CV Résumé</h1>
+      <p class="project-date">Projet personnel – 2025</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="assets/cv-parser.jpg" alt="Interface de CV Résumé">
+    </section>
+
+    <section class="project-description">
+      <h2>Présentation</h2>
+      <p>
+        CV Résumé est une application intelligente qui extrait automatiquement les compétences, formations, expériences professionnelles et autres informations clés depuis un fichier de CV (PDF ou DOCX).
+        Elle vise à simplifier l’analyse de profils pour les recruteurs ou les plateformes RH.
+      </p>
+
+      <h2>Fonctionnalités</h2>
+      <ul>
+        <li>Upload de CV en format PDF ou Word.</li>
+        <li>Extraction automatique d’informations : compétences, diplômes, expériences, contact.</li>
+        <li>Affichage structuré sous forme de résumé clair et exportable.</li>
+        <li>Utilisation de techniques NLP (traitement du langage naturel) pour identifier les mots-clés.</li>
+        <li>Support multilingue (français / anglais).</li>
+      </ul>
+
+      <h2>Mon rôle</h2>
+      <ul>
+        <li>Développement de l’interface Angular pour l’upload, l’affichage et la restitution du résumé.</li>
+        <li>Traitement backend en Node.js + bibliothèques NLP (comme spaCy ou NLP.js).</li>
+        <li>Implémentation de parsers pour analyser le texte brut issu des documents PDF/DOCX.</li>
+        <li>Optimisation des résultats en analysant des modèles de CV variés.</li>
+      </ul>
+
+      <h2>Technologies utilisées</h2>
+      <ul>
+        <li>Angular</li>
+        <li>Node.js, Express</li>
+        <li>NLP.js / spaCy</li>
+        <li>PDF-Parse, docx-parser</li>
+      </ul>
+
+      <h2>Ce que j’ai appris</h2>
+      <p>
+        Ce projet m’a permis de combiner mes compétences en développement web full-stack et en traitement du langage naturel. J’ai appris à extraire de l’information utile à partir de documents non structurés et à restituer ces données de manière claire et utile pour les utilisateurs finaux.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

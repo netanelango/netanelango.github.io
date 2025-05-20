@@ -117,13 +117,14 @@ nav ul li a:hover {
 
 
 #bubbles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
+
 
 .hero-content {
     text-align: center;
@@ -485,7 +486,7 @@ nav ul li a:hover {
   border-radius: 12px;
   transition: transform 0.3s ease;
   text-align: left;
-  width: 35%;
+  width: 25%;
 }
 
 .project-card:hover {
@@ -514,9 +515,8 @@ nav ul li a:hover {
 
 .project-card .tech {
   font-weight: bold;
-  background-color: #eb81d162;
+  background-color: #2deb8c62;
   padding: 10px 20px;
-  width: 250px;
 }
 
 .project-card .btn {

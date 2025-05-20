@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet : hpwheel</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail-page {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      color: #8e44ad;
+    }
+
+    .project-date {
+      font-size: 1rem;
+      color: #7f8c8d;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-description h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+
+    .project-description p,
+    .project-description ul {
+      text-align: justify;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .project-description ul {
+      padding-left: 20px;
+    }
+
+    .project-description li {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #8e44ad;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #732d91;
+    }
+  </style>
+</head>
+<body>
+  <main class="project-detail-page">
+    <section class="project-header">
+      <h1>hpwheel</h1>
+      <p class="project-date">Projet chez Worldline – 2024</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="assets/hpWheel.png" alt="Interface du jeu hpwheel">
+    </section>
+
+    <section class="project-description">
+      <h2>Présentation</h2>
+      <p>
+        hpwheel est un jeu web de type QCM conçu pour tester les connaissances des utilisateurs sur des thèmes variés, choisis aléatoirement à chaque partie. Le système intègre une gestion complète des utilisateurs, avec inscription et parrainage.
+      </p>
+
+      <h2>Fonctionnalités principales</h2>
+      <ul>
+        <li>Sélection aléatoire de thèmes pour chaque question, rendant le jeu dynamique et engageant.</li>
+        <li>Affichage de questions avec choix multiples et attribution de points selon les réponses.</li>
+        <li>Gestion des utilisateurs via inscription et authentification.</li>
+        <li>Fonctionnalité de parrainage permettant d’inviter des amis via un lien dédié.</li>
+      </ul>
+
+      <h2>Mon rôle</h2>
+      <ul>
+        <li>Développement frontend avec Angular pour une interface dynamique et réactive.</li>
+        <li>Création du backend en Node.js pour la gestion des questions, utilisateurs et scores.</li>
+        <li>Intégration de Firebase pour l’authentification, la base de données temps réel et le stockage.</li>
+        <li>Tests approfondis et déploiement pour assurer stabilité et performance du jeu.</li>
+      </ul>
+
+      <h2>Technologies utilisées</h2>
+      <ul>
+        <li>Angular</li>
+        <li>Node.js</li>
+        <li>Firebase (authentification, base de données temps réel)</li>
+      </ul>
+
+      <h2>Ce que j’ai appris</h2>
+      <p>
+        Ce projet m’a permis d’approfondir mes compétences en développement full-stack, particulièrement avec Angular et Firebase, tout en maîtrisant la gestion des interactions utilisateur et des systèmes de parrainage.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

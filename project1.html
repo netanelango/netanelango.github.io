@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projet : Application Feedback Client</title>
+  <title>Projet : ATM Sans Carte</title>
   <link rel="stylesheet" href="../style.css" />
   <style>
     .project-detail-page {
@@ -15,7 +15,7 @@
 
     .project-header h1 {
       font-size: 2.5rem;
-      color: #c0392b;
+      color: #00bd84;
     }
 
     .project-date {
@@ -54,7 +54,7 @@
 
     .btn {
       display: inline-block;
-      background-color: #c0392b;
+      background-color: #2980b9;
       color: white;
       padding: 12px 20px;
       text-decoration: none;
@@ -63,51 +63,58 @@
     }
 
     .btn:hover {
-      background-color: #a93226;
+      background-color: #21618c;
     }
   </style>
 </head>
 <body>
   <main class="project-detail-page">
     <section class="project-header">
-      <h1>Application de Feedback Client</h1>
-      <p class="project-date">Stage - Décembre 2022 à Juillet 2023</p>
+      <h1>ATM InnovaBank</h1>
+      <p class="project-date">Alternance – Chez Worldline, 2024</p>
     </section>
 
     <section class="project-gallery">
-      <img src="assets/1.jpg" alt="Capture écran du projet Feedback Client">
+      <img src="assets/ATM.jpg" alt="Interface de l'application ATM sans carte">
     </section>
 
     <section class="project-description">
-      <h2>Contexte & Challenges</h2>
+      <h2>Contexte & Objectif</h2>
       <p>
-        Lors de mon stage chez Innership, j’ai participé à la conception et au développement d’une application web dédiée à la collecte et la gestion de feedbacks clients pour une meilleure prise de décision produit.
-        Le défi principal était de créer une interface simple et intuitive tout en intégrant une logique métier flexible et modulaire.
+        Dans le cadre d'une démonstration innovante au sein de Worldline, j'ai développé une application web progressive (PWA) permettant aux utilisateurs de retirer de l'argent à un distributeur automatique <strong>sans carte bancaire</strong>. 
+        Le retrait se fait via un <strong>QR code sécurisé</strong> ou un <strong>module NFC</strong> depuis un smartphone. L'objectif : améliorer la sécurité et la fluidité d'accès aux services bancaires.
       </p>
 
-      <h2>Mes Contributions</h2>
+      <h2>Fonctionnalités principales</h2>
       <ul>
-        <li>Participation au brief des user stories avec le Product Owner pour mieux comprendre les besoins métiers.</li>
-        <li>Développement complet de l’interface web (formulaires dynamiques, pages de reporting).</li>
-        <li>Refactorisation et amélioration de modules existants, mise à jour des fonctionnalités.</li>
-        <li>Correction de bugs et optimisation des performances front-end.</li>
-        <li>Intégration des API et gestion des échanges backend en REST.</li>
+        <li>Connexion sécurisée via un token temporaire généré côté serveur.</li>
+        <li>Scan QR code ou utilisation du NFC pour authentification rapide au distributeur.</li>
+        <li>Confirmation du montant et retrait via une interface fluide et responsive.</li>
+        <li>Gestion temps réel des sessions utilisateurs et transactions en base de données MongoDB.</li>
+      </ul>
+
+      <h2>Rôle et Réalisations</h2>
+      <ul>
+        <li>Développement complet de la PWA avec <strong>Svelte</strong>, framework moderne orienté composants HTML/CSS/JS.</li>
+        <li>Implémentation des interactions NFC & QR code avec une gestion sécurisée des accès.</li>
+        <li>Connexion à une base <strong>MongoDB</strong> pour stocker les sessions et les logs de transaction.</li>
+        <li>Optimisation de l'expérience utilisateur mobile (UX) et design responsive.</li>
       </ul>
 
       <h2>Technologies utilisées</h2>
       <ul>
-        <li>React JS, Node.js, Express</li>
+        <li>Svelte</li>
         <li>MongoDB</li>
-        <li>Postman, Figma</li>
-        <li>Méthodologie Agile - Scrum</li>
+        <li>Service Workers (PWA)</li>
+        <li>API Web NFC & QR Code</li>
       </ul>
 
-      <h2>Notions Apprises</h2>
+      <h2>Compétences acquises</h2>
       <p>
-        J’ai renforcé mes compétences en développement full-stack, en gestion de projet Agile, ainsi qu’en UX/UI design. Ce projet m’a aussi permis de mieux structurer mes codes pour assurer la maintenabilité à long terme.
+        Ce projet m'a permis d'explorer le développement d'interfaces ultra-légères avec Svelte, tout en intégrant des technologies de communication de proximité (NFC) et de sécurisation mobile.
+        J’ai également approfondi ma compréhension des architectures sans carte et de la logique de transaction bancaire dématérialisée.
       </p>
 
-      <a href="https://github.com/tonrepo/feedback-app" target="_blank" class="btn">Voir le code sur GitHub</a>
     </section>
   </main>
 </body>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planzone</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail-page {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      color: #2980b9;
+    }
+
+    .project-date {
+      font-size: 1rem;
+      color: #7f8c8d;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-description h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+
+    .project-description p,
+    .project-description ul {
+      text-align: justify;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .project-description ul {
+      padding-left: 20px;
+    }
+
+    .project-description li {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #2980b9;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #21618c;
+    }
+  </style>
+</head>
+<body>
+  <main class="project-detail-page">
+    <section class="project-header">
+      <h1>Planzone: Application de Réservation d’Événements</h1>
+      <p class="project-date">Projet scolaire – 2024</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="assets/2.png" alt="Interface réservation d’événements">
+    </section>
+
+    <section class="project-description">
+      <h2>Présentation</h2>
+      <p>
+        Ce projet est une application web permettant aux utilisateurs de réserver des places pour divers événements (conférences, concerts, ateliers). Une interface dédiée aux administrateurs permet la création et la gestion des événements en quelques clics.
+      </p>
+
+      <h2>Fonctionnalités principales</h2>
+      <ul>
+        <li>Inscription et gestion des utilisateurs avec système d’authentification.</li>
+        <li>Réservation d’événements avec confirmation et attribution de place.</li>
+        <li>Interface d’administration pour créer, modifier ou supprimer un événement.</li>
+        <li>Affichage dynamique des événements disponibles avec détails.</li>
+      </ul>
+
+      <h2>Mon rôle</h2>
+      <ul>
+        <li>Développement de l’interface utilisateur avec Angular (gestion des formulaires, des états, affichage dynamique).</li>
+        <li>Développement de l’API backend avec Spring Boot (création des endpoints REST, logique métier, gestion des utilisateurs et événements).</li>
+        <li>Connexion entre le frontend et le backend, tests des différentes interactions.</li>
+      </ul>
+
+      <h2>Technologies utilisées</h2>
+      <ul>
+        <li>Angular</li>
+        <li>Java Spring Boot</li>
+      </ul>
+
+      <h2>Ce que j’ai appris</h2>
+      <p>
+        Ce projet m’a permis de travailler sur un cycle complet de développement d’application web, en gérant à la fois le côté client et serveur. J’ai aussi renforcé mes compétences en architecture d’application et dans la création d’interfaces d’administration efficaces.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

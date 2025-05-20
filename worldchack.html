@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet : WorldChack API</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail-page {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      color: #2980b9;
+    }
+
+    .project-date {
+      font-size: 1rem;
+      color: #7f8c8d;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-description h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+
+    .project-description p,
+    .project-description ul {
+      text-align: justify;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .project-description ul {
+      padding-left: 20px;
+    }
+
+    .project-description li {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #2980b9;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2471a3;
+    }
+  </style>
+</head>
+<body>
+  <main class="project-detail-page">
+    <section class="project-header">
+      <h1>WorldChack API</h1>
+      <p class="project-date">Projet personnel – 2024</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="assets/worldchack.jpg" alt="Illustration WorldChack API">
+    </section>
+
+    <section class="project-description">
+      <h2>Présentation</h2>
+      <p>
+        WorldChack est une API REST construite avec Spring Boot permettant de récupérer des listes de pays et leurs principales villes. L’objectif est de fournir un backend léger et rapide, facilement intégrable dans des systèmes de géolocalisation, des formulaires ou des services de recherche géographique.
+      </p>
+
+      <h2>Fonctionnalités</h2>
+      <ul>
+        <li>Liste de tous les pays disponibles (ISO standards).</li>
+        <li>Liste des villes par pays avec pagination et tri.</li>
+        <li>Endpoint pour recherche par nom de ville ou pays.</li>
+        <li>Réponses au format JSON prêtes à être utilisées par une interface frontend.</li>
+      </ul>
+
+      <h2>Mon rôle</h2>
+      <ul>
+        <li>Création de l'API avec Spring Boot (Java 17).</li>
+        <li>Implémentation des endpoints REST avec pagination.</li>
+        <li>Utilisation de données fiables issues d’un dump GeoNames/JSON externe.</li>
+        <li>Gestion des erreurs HTTP et validation des requêtes.</li>
+      </ul>
+
+      <h2>Technologies utilisées</h2>
+      <ul>
+        <li>Java Spring Boot</li>
+        <li>Maven</li>
+        <li>REST Controller</li>
+        <li>Jackson (sérialisation JSON)</li>
+      </ul>
+
+      <h2>Ce que j’ai appris</h2>
+      <p>
+        Ce projet m’a permis de mieux comprendre l'architecture REST, la sérialisation de données, la structure des projets Spring, et la gestion des dépendances avec Maven. Il a également amélioré ma capacité à structurer proprement une API réutilisable dans plusieurs contextes.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

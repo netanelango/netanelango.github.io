@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet : ResumeText</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail-page {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      color: #16a085;
+    }
+
+    .project-date {
+      font-size: 1rem;
+      color: #7f8c8d;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-description h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+
+    .project-description p,
+    .project-description ul {
+      text-align: justify;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .project-description ul {
+      padding-left: 20px;
+    }
+
+    .project-description li {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #16a085;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #138d75;
+    }
+  </style>
+</head>
+<body>
+  <main class="project-detail-page">
+    <section class="project-header">
+      <h1>ResumeText</h1>
+      <p class="project-date">Projet personnel – 2024</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="assets/2.png" alt="Interface ResumeText">
+    </section>
+
+    <section class="project-description">
+      <h2>Présentation</h2>
+      <p>
+        ResumeText est une application Angular qui génère automatiquement un document PDF de synthèse à partir des réponses saisies dans un formulaire.
+        L’objectif est de permettre aux utilisateurs de produire rapidement un compte rendu clair et structuré, utilisable dans des contextes professionnels, scolaires ou administratifs.
+      </p>
+
+      <h2>Fonctionnalités</h2>
+      <ul>
+        <li>Formulaire dynamique avec différents types de champs (textes, dates, options...)</li>
+        <li>Génération de synthèse personnalisée à partir des réponses.</li>
+        <li>Export automatique au format PDF via une bibliothèque Angular.</li>
+        <li>Possibilité de personnaliser l'en-tête, le pied de page et la mise en page du document.</li>
+      </ul>
+
+      <h2>Mon rôle</h2>
+      <ul>
+        <li>Conception de l'interface utilisateur responsive avec Angular.</li>
+        <li>Création d’un service de traitement de données pour la synthèse automatique.</li>
+        <li>Intégration de la génération PDF (via jsPDF ou pdfMake).</li>
+        <li>Amélioration de l’expérience utilisateur (feedback visuel, validations, prévisualisation PDF).</li>
+      </ul>
+
+      <h2>Technologies utilisées</h2>
+      <ul>
+        <li>Angular</li>
+        <li>TypeScript</li>
+        <li>jsPDF / pdfMake</li>
+        <li>HTML5 / CSS3</li>
+      </ul>
+
+      <h2>Ce que j’ai appris</h2>
+      <p>
+        Ce projet m’a permis de mieux comprendre la manipulation dynamique de données côté front-end,
+        ainsi que l’intégration de services de génération de fichiers PDF dans une application Angular.
+        J’ai également renforcé mes compétences en structuration de formulaires complexes.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

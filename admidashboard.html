@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet : AdmiDashboard</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail-page {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      color: #27ae60;
+    }
+
+    .project-date {
+      font-size: 1rem;
+      color: #7f8c8d;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-description h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+
+    .project-description p,
+    .project-description ul {
+      text-align: justify;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .project-description ul {
+      padding-left: 20px;
+    }
+
+    .project-description li {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #27ae60;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #219150;
+    }
+  </style>
+</head>
+<body>
+  <main class="project-detail-page">
+    <section class="project-header">
+      <h1>AdmiDashboard</h1>
+      <p class="project-date">Projet personnel – 2024</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="assets/admidashboard.jpg" alt="Capture d'écran du tableau d'importation">
+    </section>
+
+    <section class="project-description">
+      <h2>Présentation</h2>
+      <p>
+        AdmiDashboard est une application simple et efficace permettant d’importer un fichier Excel contenant des utilisateurs et de visualiser automatiquement les données dans un tableau interactif. Chaque ligne du fichier correspond à un utilisateur avec des champs tels que : nom, prénom, date de naissance, âge, ville, et couleur préférée.
+      </p>
+
+      <h2>Fonctionnalités</h2>
+      <ul>
+        <li>Upload de fichier Excel (.xlsx ou .csv).</li>
+        <li>Parsing automatique du contenu grâce à la bibliothèque <code>xlsx</code>.</li>
+        <li>Affichage dynamique des données dans un tableau responsive.</li>
+        <li>Vérification des doublons ou champs manquants avant insertion.</li>
+        <li>Possibilité de filtrer ou trier les utilisateurs par colonne.</li>
+      </ul>
+
+      <h2>Mon rôle</h2>
+      <ul>
+        <li>Conception de l'interface avec React (hooks + composants fonctionnels).</li>
+        <li>Implémentation de l’importation via la librairie SheetJS (XLSX).</li>
+        <li>Nettoyage et normalisation des données côté frontend.</li>
+        <li>Ajout d’une validation en temps réel des champs du fichier.</li>
+      </ul>
+
+      <h2>Technologies utilisées</h2>
+      <ul>
+        <li>React</li>
+        <li>JavaScript / TypeScript</li>
+        <li>SheetJS (XLSX)</li>
+        <li>Bootstrap pour la mise en forme rapide</li>
+      </ul>
+
+      <h2>Ce que j’ai appris</h2>
+      <p>
+        Ce projet m’a permis de découvrir la manipulation de fichiers Excel dans une application web et d’approfondir mes compétences en React. J’ai aussi pu travailler sur la gestion de données utilisateurs de manière sécurisée et structurée.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet : Bookker</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail-page {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      color: #2980b9;
+    }
+
+    .project-date {
+      font-size: 1rem;
+      color: #7f8c8d;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-description h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+
+    .project-description p,
+    .project-description ul {
+      text-align: justify;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .project-description ul {
+      padding-left: 20px;
+    }
+
+    .project-description li {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #2980b9;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #21618c;
+    }
+  </style>
+</head>
+<body>
+  <main class="project-detail-page">
+    <section class="project-header">
+      <h1>Bookker – API de validation de QR Codes pour événements</h1>
+      <p class="project-date">Projet personnel – 2024</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="assets/bookker.jpg" alt="Illustration du projet Bookker">
+    </section>
+
+    <section class="project-description">
+      <h2>Objectif</h2>
+      <p>
+        Bookker est une API développée pour faciliter la validation d’accès à des événements à l’aide de QR codes. Ce système permet un contrôle rapide, sécurisé et automatisé des participants à l’entrée.
+      </p>
+
+      <h2>Fonctionnalités clés</h2>
+      <ul>
+        <li>📱 Génération et validation de QR codes liés à un ticket ou un utilisateur.</li>
+        <li>🔒 Contrôle d’unicité et validité en temps réel (évite les fraudes ou les réutilisations).</li>
+        <li>📊 Endpoint pour suivi des validations par événement.</li>
+        <li>⚙️ Facilement intégrable avec d'autres outils front ou mobiles (ex: scanners, bornes, applications).</li>
+      </ul>
+
+      <h2>Stack technique</h2>
+      <ul>
+        <li><strong>Node.js</strong> avec Express pour la logique API</li>
+        <li><strong>JSON Web Token</strong> pour le système de validation sécurisé</li>
+        <li><strong>MongoDB</strong> (optionnel selon la version) pour traçabilité et historique</li>
+      </ul>
+
+      <h2>Ce que j’ai appris</h2>
+      <p>
+        Ce projet m’a permis de travailler sur un microservice simple mais utile, avec des enjeux de sécurité et de performance en contexte réel (événements live). J’ai aussi pu améliorer mes compétences en structuration d’API REST et en génération dynamique de QR code.
+      </p>
+
+      <!-- <a href="#" class="btn">Voir le code GitHub</a> -->
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet : Trust & Trust</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail-page {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      color: #27ae60;
+    }
+
+    .project-date {
+      font-size: 1rem;
+      color: #7f8c8d;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-description h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+
+    .project-description p,
+    .project-description ul {
+      text-align: justify;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .project-description ul {
+      padding-left: 20px;
+    }
+
+    .project-description li {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #27ae60;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1e8449;
+    }
+  </style>
+</head>
+<body>
+  <main class="project-detail-page">
+    <section class="project-header">
+      <h1>Trust & Trust</h1>
+      <p class="project-date">Alternance– Worldline, 2025</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="assets/trust & trace.jpg" alt="Interface de la plateforme Trust & Trust">
+    </section>
+
+    <section class="project-description">
+      <h2>Présentation du Projet</h2>
+      <p>
+        Trust & Trust est une application web de revente d’articles de seconde main, s’inspirant du modèle de plateformes comme Vinted, mais avec une plus-value majeure : 
+        <strong>la garantie d’authenticité</strong>. 
+        Chaque produit est soumis à une vérification rigoureuse <strong>avant sa mise en ligne</strong> grâce à des outils d’analyse intelligente.
+      </p>
+
+      <h2>Fonctionnalités phares</h2>
+      <ul>
+        <li>Capture d’image du produit pour comparaison automatique avec les visuels officiels (scraping et matching).</li>
+        <li>Analyse de code barre / numéro de série pour vérifier l’authenticité du produit en ligne.</li>
+        <li>Interface utilisateur fluide pour publication, messagerie et gestion de profils.</li>
+        <li>Système de scoring de confiance basé sur les vérifications passées.</li>
+      </ul>
+
+      <h2>Responsabilités techniques</h2>
+      <ul>
+        <li>Conception de l’interface avec <strong>React.js</strong> et gestion dynamique des formulaires de dépôt.</li>
+        <li>Implémentation du backend en <strong>Java Spring Boot</strong> pour gérer les flux de vérification et les échanges entre services.</li>
+        <li>Utilisation de <strong>scraping intelligent</strong> et intégration d’APIs tierces pour croiser les informations des produits.</li>
+        <li>Déploiement de l’application sur <strong>Google Cloud Platform (GCP)</strong>, avec pipeline CI/CD.</li>
+      </ul>
+
+      <h2>Stack technique</h2>
+      <ul>
+        <li>React.js</li>
+        <li>Spring Boot (Java)</li>
+        <li>Google Cloud Platform (App Engine, Cloud Functions)</li>
+        <li>Scraping Web, APIs de vérification produits</li>
+        <li>MongoDB (ou PostgreSQL selon la version déployée)</li>
+      </ul>
+
+      <h2>Résultats & Apports</h2>
+      <p>
+        Ce projet m’a permis de développer une approche complète d’un produit web complexe, mêlant UI, sécurité, et automatisation.
+        J’ai acquis une solide expérience sur la <strong>fiabilisation des données utilisateurs</strong> et la gestion cloud.
+        En bonus, j’ai pu proposer des améliorations UX comme un indicateur de fiabilité dynamique affiché sur chaque annonce.
+      </p>
+
+      <!-- Lien GitHub optionnel -->
+      <!-- <a href="https://github.com/tonrepo/trust-and-trust" target="_blank" class="btn">Voir le code sur GitHub</a> -->
+    </section>
+  </main>
+</body>
+</html>
