@@ -736,7 +736,7 @@ footer p {
   .icon-container {
     width: 50px;
     height: 50px;
-    background: rgba(173, 198, 252, 0.664);
+    background: rgba(173, 198, 252, 0.87);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -798,7 +798,7 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.562));
+    background: rgba(255, 255, 255, 0.562);
     color: #000000;
     text-decoration: none;
     transition: all 0.3s ease;
