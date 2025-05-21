@@ -603,6 +603,298 @@ footer p {
 }
 
 
+/* Section Contact */
+.contact-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #e1f0ff, #ffffff);
+    position: relative;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #2c3e50;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  
+  .separator {
+    width: 80px;
+    height: 4px;
+    background: #4d7cff;
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+  
+  .contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-card {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(143, 46, 46, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(16, 27, 61, 0.068) 0%, transparent 70%);
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  
+  .contact-profile {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #4d7cff, #3a5ecc);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-image span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-profile h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #000000;
+  }
+  
+  .profile-title {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+  }
+  
+  .profile-location {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .contact-details {
+    margin-bottom: 40px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(8, 28, 51, 0.733);
+  }
+  
+  .contact-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    background: rgba(173, 198, 252, 0.664);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .contact-item:hover .icon-container {
+    background: #4d7cff;
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  .icon-container i {
+    font-size: 1.3rem;
+    color: #4d7cff;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-item:hover .icon-container i {
+    color: rgb(0, 0, 0);
+  }
+  
+  .contact-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-text span {
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
+  
+  .contact-text a {
+    font-size: 1.1rem;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .contact-text a:hover {
+    color: #4d7cff;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .social-link {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.562));
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .social-link i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-link:hover {
+    transform: translateY(-5px);
+  }
+  
+  .social-link.linkedin:hover {
+    background: #0077B5;
+    color: white;
+  }
+  
+  .social-link.github:hover {
+    background: #333;
+    color: white;
+  }
+  
+  .social-link.email:hover {
+    background: #D44638;
+    color: white;
+  }
+  
+  .social-link:hover i {
+    transform: scale(1.2);
+  }
+  
+  .contact-cta {
+    text-align: center;
+  }
+  
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(45deg, #4d7cff, #3a5ecc);
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .download-btn i {
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-card {
+      padding: 30px;
+    }
+    
+    .profile-image {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .profile-image span {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-card {
+      padding: 25px;
+    }
+    
+    .profile-image {
+      width: 70px;
+      height: 70px;
+    }
+    
+    .profile-image span {
+      font-size: 1.8rem;
+    }
+    
+    .icon-container {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
 /* Cacher menu sur petits écrans */
 @media screen and (max-width: 768px) {
     .burger {
